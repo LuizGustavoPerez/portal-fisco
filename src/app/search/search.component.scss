@@ -1,0 +1,25 @@
+.full-height {
+  height: 100vh;
+  input {
+    border-radius: 6px;
+  }
+  .input-group-prepend {
+    button {
+      height: 100%;
+      margin-left: 2px;
+      background-color: #ff5722;
+      border-color: #ff5722;
+    }
+  }
+}
+
+//remover caso não for usar imagem de fundo
+.bgImg {
+  background-image: url(../../assets/images/search-bkg.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  // height: 100hv;
+  // overflow: hidden;
+}

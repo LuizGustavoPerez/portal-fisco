@@ -1,0 +1,49 @@
+nav {
+  padding: 0%;
+  .navbar-brand {
+    padding: 0%;
+  }
+}
+
+/* Telefones em paisagem a tablet em retrato */
+@media (max-width: 767px) {
+  img {
+    width: 80%;
+    height: auto;
+    max-width: 310px;
+    min-width: 180px;
+    margin-left: -20px;
+  }
+  .togglePos {
+    position: absolute;
+    top: 13px;
+    right: 4px;
+  }
+}
+
+/* Tablet em retrato a paisagem e desktop */
+@media (min-width: 768px) {
+  img {
+    width: 100%;
+    height: auto;
+    max-width: 310px;
+    min-width: 180px;
+    margin-left: -20px;
+  }
+  .togglePos {
+    position: absolute;
+    top: 23px;
+    right: 4px;
+  }
+}
+
+@media (min-width: 991px) {
+  nav {
+    height: 66px;
+    .user-access {
+      position: absolute;
+      top: 13px;
+      right: 4px;
+    }
+  }
+}
