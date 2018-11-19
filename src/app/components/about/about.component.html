@@ -160,33 +160,61 @@
           soluções nas áreas Tributária, Fiscal e Tecnologia da Informação.
         </p>
         <div class="row">
-          <div class="card-info left">
+          <div (click)="viewDetail('processo')" class="card-info left">
             <h4>PROCESSOS</h4>
           </div>
-          <div class="card-info right">
+          <div (click)="viewDetail('operacional')" class="card-info right">
             <h4>OPERACIONAL</h4>
           </div>
         </div>
         <div class="row">
-          <div class="card-info left">
+          <div (click)="viewDetail('tecnologia')" class="card-info left">
             <h4>TECNOLOGIA</h4>
           </div>
-          <div class="card-info right">
+          <div (click)="viewDetail('comercial')" class="card-info right">
             <h4>COMERCIAL</h4>
+          </div>
+        </div>
+        <div class="row" >
+          <span class="noShow" [class.show]="show" style="width:100%; text-align: center; padding: 0; margin-top: 20px"><i class="fas fa-arrow-down" style="font-size: 6.3vw"></i></span>
+        </div>
+        <div class="row" >
+          <span class="noShow" [class.show]="show" style="width:100%; text-align: center; padding: 0; margin-top: 20px"><b>{{type}}</b></span>
+        </div>
+        <div class="row noShow" [class.show]="show">
+          <div style="background-color:rgb(223, 213, 213);border: solid 1px rgb(105, 105, 105); width:60%; height: 10vw; margin-left: 20%;">
+            <p style="padding: 5px; color:rgb(201, 12, 12); text-align: center; vertical-align: middle; height: 100%;"><b>{{textType}}</b></p>
           </div>
         </div>
       </div>
       <div class="box-2">
-        <p>Nossa equipe de suporte está capacitada para oferecer o melhor apoio aos nossos clientes, de modo
-          a proporcionar o aumento de sua produtividade através do uso da tecnologia dos nossos produtos e
-          serviços.
-          Tendo como principal foco o Cliente, a área de Suporte oferece serviços de apoio, suporte técnico e
-          treinamento
-          qualificado com profissionais treinados para oferecer serviços de alta qualidade e eficiência. </p>
-        <br>
-        <p>Estamos prontos para atender e solucionar suas dúvidas, com uma equipe de analistas de suporte
-          altamente preparados e qualificados. Conte conosco e envie suas dúvidas, seu projeto e sugestões,
-          teremos satisfação em responder.
+        <h6><b>Nossa Missão</b></h6>
+        <p>A missão da Portal Fisco é desenvolver soluções inovadoras e fornecer serviços de Consultoria integrados com
+          Tecnologia. O nosso propósito corporativo é satisfazer o cliente no tempo necessário, garantir o melhor
+          desempenho no atendimento e viabilizar tomadas de decisões eficientes e coesas.
+        </p>
+        <h6><b>Nossos Objetivos</b></h6>
+        <p>O objetivo da empresa é oferecer serviços e soluções integrados, nas áreas de Tributário, Fiscal e
+          Tecnologia, que se enquadrem nos propósitos peculiares de nossos clientes, servindo-os de forma única e
+          efetiva.
+        </p>
+        <h6><b>Valores Compartilhados</b></h6>
+        <p>Nossas operações são conduzidas com integridade, respeito aos direitos e interesses de nossos clientes e
+          parceiros, e também em conformidade às leis e regulamentos vigentes. Assim, os benefícios mútuos e bons
+          resultados são frutos do relacionamento baseado na confiança estabelecida.
+        </p>
+        <h6><b>Pessoas</b></h6>
+        <p>Gestão de profissionais capazes de atuar conforme nossa missão e princípios. Como prioridade, assegurar
+          ambiente de trabalho dinâmico, inovador e hábil a oferecer potenciais resultados e serviços e assim,
+          valorizar nossos clientes e parceiros.
+        </p>
+        <h6><b>Excelência</b></h6>
+        <p>Trabalhamos com altos padrões de excelência profissional no que tange a integridade, conhecimento,
+          atendimento, tempo e entregas.
+        </p>
+        <h6><b>Pontualidade</b></h6>
+        <p>Comprometimento com os prazos e demandas determinado pelo cliente. Pontualidade para com os deveres e
+          compromissos são valores inerentes a Portal Fisco.
         </p>
       </div>
     </div>

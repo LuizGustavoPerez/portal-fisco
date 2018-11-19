@@ -1,9 +1,7 @@
-$bgColor: #ff5722;
-$txtColor: #fff;
+$bgColor: #fff;
+$txtColor: #ff5722;
 
 @media (max-width: 767px) {
-  $bgColor: #ff5722;
-  $txtColor: #fff;
   #mobileSupport {
     display: block;
   }
@@ -32,7 +30,20 @@ $txtColor: #fff;
       height: 100%;
       #carouselSuporte {
         height: 100%;
-
+        .carousel-indicators li {
+          background-color: #bdbdbd;
+        }
+        .carousel-indicators .active {
+          background-color: #ff5722;
+        }
+        .carousel-control-prev-icon {
+          background-image: 
+            url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' stroke='rgba(0,0,0, 0.5)' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E"); 
+        }
+        .carousel-control-next-icon {
+          background-image: 
+            url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' stroke='rgba(0,0,0, 0.5)' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E"); 
+        }
         #d1 {
           padding-top: 80px;
           padding-right: 50px;
@@ -84,9 +95,9 @@ $txtColor: #fff;
       margin: 0;
       padding: 2px;
     }
-    .box-title{
+    .box-title {
       width: 100%;
-      border-bottom: 1.3px solid #FFF;      
+      border-bottom: 1.3px solid #ff5722;
     }
     .box-1,
     .box-2,
@@ -103,6 +114,9 @@ $txtColor: #fff;
         padding-top: 17px;
         padding-left: 10px;
         text-align: left;
+      }
+      h6 {
+        color: #e64a19;
       }
       img {
         width: 95%;

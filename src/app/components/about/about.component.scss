@@ -1,9 +1,9 @@
-$bgColor: #ff5722;
-$txtColor: #fff;
+$bgColor: #fff;
+$txtColor: #ff5722;
 
 @media (max-width: 767px) {
   .full-height {
-    height: 110%;
+    height: 100%;
   }
   #mobileAbout {
     display: block;
@@ -36,7 +36,7 @@ $txtColor: #fff;
     padding: 18px;
   }
   .container {
-    height: 90%;
+    height: 100%;
     .row {
       height: 100%;
       #carouselAbout {
@@ -45,25 +45,31 @@ $txtColor: #fff;
         .carousel-inner {
           background-color: $bgColor;
         }
+        .carousel-control-prev-icon {
+          background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' stroke='rgba(0,0,0, 0.5)' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+        }
+        .carousel-control-next-icon {
+          background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' stroke='rgba(0,0,0, 0.5)' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+        }
+        .carousel-indicators li {
+          background-color: #bdbdbd;
+        }
+        .carousel-indicators .active {
+          background-color: #ff5722;
+        }
         .carousel-item {
           padding: 4px;
           .col.values {
             text-align: left;
-            i {
+            padding-left: 25px;
+            i{
               font-size: 15px;
-              // vertical-align: middle;
-              :hover {
-                -webkit-transform: rotateZ(720deg);
-                -moz-transform: rotateZ(720deg);
-                transform: rotateZ(720deg);
-                display: inline-block;
-              }
             }
           }
         }
       }
       .box-msg {
-        background-color: white;
+        // background-color: #bdbdbd;
         width: 80%;
         margin-left: 10%;
         color: black;
@@ -100,7 +106,10 @@ $txtColor: #fff;
     }
     .box-title {
       width: 100%;
-      border-bottom: 1.3px solid #fff;
+      border-bottom: 1.3px solid #ff5722;
+      h4 {
+        color: #ff5722 !important;
+      }
     }
     .box-1,
     .box-2 {
@@ -109,9 +118,9 @@ $txtColor: #fff;
       padding-left: 10px;
       padding-right: 8px;
       .card-info {
-        // box-shadow: 2px 2px #BDBDBD; 
+        // box-shadow: 2px 2px #BDBDBD;
         border-radius: 8px;
-        :hover{
+        :hover {
           cursor: pointer;
         }
         h4 {
@@ -120,17 +129,26 @@ $txtColor: #fff;
         }
       }
       .card-info.left {
-        background-color: #9E9E9E;
+        background-color: rgb(201, 12, 12);
         height: 60px;
         width: 42%;
         margin-left: 6%;
+        transition: all 2s;
+      }
+      .card-info.left:hover {
+        background-color: #df603a;
       }
       .card-info.right {
-        background-color: #9E9E9E;
+        background-color: rgb(201, 12, 12);
         height: 60px;
         width: 42%;
         margin-left: 1%;
+        transition: all 1s;
       }
+      .card-info.right:hover {
+        background-color: #df603a;
+      }
+
       p {
         font-size: 1.17vw;
       }
@@ -140,6 +158,26 @@ $txtColor: #fff;
         padding-left: 10px;
         text-align: left;
         font-size: 1.5vw;
+        color: #fff;
+      }
+      h6 {
+        color: #e64a19;
+      }
+      .noShow {
+        display: none;
+      }
+      .show {
+        display: block;
+        animation: fadein 2s;
+      }
+
+      @keyframes fadein {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
       }
     }
 
@@ -151,7 +189,7 @@ $txtColor: #fff;
   }
 }
 
-i:hover {
+i.fa-plus:hover {
   transition: transform 0.5s ease-in;
   transform: rotate(90deg);
 }
