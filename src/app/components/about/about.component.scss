@@ -2,19 +2,25 @@ $bgColor: #ff5722;
 $txtColor: #fff;
 
 @media (max-width: 767px) {
-  #mobileSupport {
+  .full-height {
+    height: 110%;
+  }
+  #mobileAbout {
     display: block;
   }
-  #desktopSupport {
+  #desktopAbout {
     display: none;
   }
 }
 
 @media (min-width: 768px) {
-  #desktopSupport {
+  .full-height {
+    height: 100%;
+  }
+  #desktopAbout {
     display: block;
   }
-  #mobileSupport {
+  #mobileAbout {
     display: none;
   }
 }
@@ -22,7 +28,6 @@ $txtColor: #fff;
 .full-height {
   background-color: $bgColor;
   color: $txtColor;
-  height: 110%;
   width: 100%;
   font-family: Helvetica, Arial, sans-serif;
   #about {
@@ -37,7 +42,7 @@ $txtColor: #fff;
       #carouselAbout {
         height: 100%;
         width: 100%;
-        .carousel-inner{
+        .carousel-inner {
           background-color: $bgColor;
         }
         .carousel-item {
@@ -72,9 +77,81 @@ $txtColor: #fff;
       }
     }
   }
+
+  #desktopAbout {
+    width: 100%;
+    height: 90%;
+    #content {
+      width: 100%;
+      height: 10%;
+      margin: 0;
+      padding: 2px;
+    }
+    .box-1,
+    .box-2 {
+      width: 50%;
+    }
+
+    #box-content {
+      width: 100%;
+      height: 90%;
+      margin: 0;
+      padding: 2px;
+    }
+    .box-title {
+      width: 100%;
+      border-bottom: 1.3px solid #fff;
+    }
+    .box-1,
+    .box-2 {
+      text-align: left;
+      padding-top: 10px;
+      padding-left: 10px;
+      padding-right: 8px;
+      .card-info {
+        // box-shadow: 2px 2px #BDBDBD; 
+        border-radius: 8px;
+        :hover{
+          cursor: pointer;
+        }
+        h4 {
+          text-align: center;
+          padding-left: 0;
+        }
+      }
+      .card-info.left {
+        background-color: #9E9E9E;
+        height: 60px;
+        width: 42%;
+        margin-left: 6%;
+      }
+      .card-info.right {
+        background-color: #9E9E9E;
+        height: 60px;
+        width: 42%;
+        margin-left: 1%;
+      }
+      p {
+        font-size: 1.17vw;
+      }
+      h4 {
+        margin: 0px;
+        padding-top: 17px;
+        padding-left: 10px;
+        text-align: left;
+        font-size: 1.5vw;
+      }
+    }
+
+    .box-1 {
+      .row {
+        margin-top: 5px;
+      }
+    }
+  }
 }
 
-i:hover{
+i:hover {
   transition: transform 0.5s ease-in;
   transform: rotate(90deg);
 }
