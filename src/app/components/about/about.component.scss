@@ -1,5 +1,5 @@
 $bgColor: #fff;
-$txtColor: #ff5722;
+$txtColor: #000;
 
 @media (max-width: 767px) {
   .full-height {
@@ -35,6 +35,9 @@ $txtColor: #ff5722;
     height: 10%;
     padding: 18px;
   }
+  h2{
+    color: #ff5722;
+  }
   .container {
     height: 100%;
     .row {
@@ -62,7 +65,7 @@ $txtColor: #ff5722;
           .col.values {
             text-align: left;
             padding-left: 25px;
-            i{
+            i {
               font-size: 15px;
             }
           }
@@ -103,6 +106,32 @@ $txtColor: #ff5722;
       height: 90%;
       margin: 0;
       padding: 2px;
+      .title-des {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        margin-top: 20px;
+        color: #ff5722;
+      }
+      .box-des {
+        background-color: rgb(223, 213, 213);
+        border: solid 1px rgb(105, 105, 105);
+        width: 60%;
+        height: 10vw;
+        margin-left: 20%;
+        border-radius: 4px;
+        p {
+          padding: 5px;
+          color: rgb(201, 12, 12);
+          text-align: center;
+          vertical-align: middle;
+          height: 100%;
+        }
+      }
+      .box-1,.box-2{
+        padding-left: 20px;
+        padding-right: 20px;
+      }
     }
     .box-title {
       width: 100%;
@@ -189,6 +218,10 @@ $txtColor: #ff5722;
   }
 }
 
+.fa-arrow-down {
+  font-size: 6.3vw;
+  color: #ff5722;
+}
 i.fa-plus:hover {
   transition: transform 0.5s ease-in;
   transform: rotate(90deg);

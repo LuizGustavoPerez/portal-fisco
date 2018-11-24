@@ -1,5 +1,5 @@
 $bgColor: #fff;
-$txtColor: #ff5722;
+$txtColor: #000;
 
 @media (max-width: 767px) {
   #mobileSupport {
@@ -30,6 +30,20 @@ $txtColor: #ff5722;
       height: 100%;
       #carouselSuporte {
         height: 100%;
+        .carousel-item{
+          padding-left: 20px;
+          padding-right: 20px;
+          h2{
+            font-size: 3vh; 
+          }
+          h4{
+            font-size: 2.5vh;
+          }
+          p{
+            font-size: 2vh;
+          }
+
+        }
         .carousel-indicators li {
           background-color: #bdbdbd;
         }
@@ -37,12 +51,10 @@ $txtColor: #ff5722;
           background-color: #ff5722;
         }
         .carousel-control-prev-icon {
-          background-image: 
-            url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' stroke='rgba(0,0,0, 0.5)' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E"); 
+          background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' stroke='rgba(0,0,0, 0.5)' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
         }
         .carousel-control-next-icon {
-          background-image: 
-            url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' stroke='rgba(0,0,0, 0.5)' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E"); 
+          background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' stroke='rgba(0,0,0, 0.5)' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
         }
         #d1 {
           padding-top: 80px;
@@ -61,11 +73,11 @@ $txtColor: #ff5722;
           }
           #q1 {
             margin-top: 50px;
-            margin-left: 50px;
+            margin-left: 20px;
           }
           #q2 {
             margin-top: 180px;
-            margin-right: 50px;
+            margin-right: 20px;
           }
         }
       }
@@ -94,6 +106,10 @@ $txtColor: #ff5722;
       height: 90%;
       margin: 0;
       padding: 2px;
+      .box-1,.box-2{
+        padding-left: 20px;
+        padding-right: 20px;
+      }
     }
     .box-title {
       width: 100%;
@@ -114,6 +130,7 @@ $txtColor: #ff5722;
         padding-top: 17px;
         padding-left: 10px;
         text-align: left;
+        color: #ff5722;
       }
       h6 {
         color: #e64a19;

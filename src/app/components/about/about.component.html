@@ -1,8 +1,8 @@
 <!-- Criar componente para parte abaixo -->
 <div id="about" class="full-height">
-  <div>
+  <!-- <div>
     <h2 style="margin-bottom: 0px;">Sobre nós</h2>
-  </div>
+  </div> -->
   <div class="container" id="mobileAbout">
     <div class="row">
       <div id="carouselAbout" class="carousel slide" data-ride="carousel">
@@ -176,14 +176,14 @@
           </div>
         </div>
         <div class="row" >
-          <span class="noShow" [class.show]="show" style="width:100%; text-align: center; padding: 0; margin-top: 20px"><i class="fas fa-arrow-down" style="font-size: 6.3vw"></i></span>
+          <span class="noShow title-des" [class.show]="show"><i class="fas fa-arrow-down"></i></span>
         </div>
         <div class="row" >
-          <span class="noShow" [class.show]="show" style="width:100%; text-align: center; padding: 0; margin-top: 20px"><b>{{type}}</b></span>
+          <span class="noShow title-des" [class.show]="show"><b>{{type}}</b></span>
         </div>
         <div class="row noShow" [class.show]="show">
-          <div style="background-color:rgb(223, 213, 213);border: solid 1px rgb(105, 105, 105); width:60%; height: 10vw; margin-left: 20%;">
-            <p style="padding: 5px; color:rgb(201, 12, 12); text-align: center; vertical-align: middle; height: 100%;"><b>{{textType}}</b></p>
+          <div class="box-des">
+            <p><b>{{textType}}</b></p>
           </div>
         </div>
       </div>
